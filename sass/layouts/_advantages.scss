@@ -1,0 +1,40 @@
+.advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.advantages__list {
+    display: flex;
+    gap: 30px;
+}
+
+.card-adv__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    margin-bottom: 10px;
+}
+
+.card-adv__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.card-adv__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+
+    background: #F5F4FA;
+    border-radius: 4px;
+
+
+    margin-bottom: 30px;
+}
