@@ -702,6 +702,7 @@ body {
 }
 
 .footer {
+  max-width: 1600px;
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -709,17 +710,39 @@ body {
 
 .footer .container {
   display: flex;
-  gap: 70px;
-  justify-content: start;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer .container {
+    justify-content: space-between;
+    padding-left: 71px;
+    padding-right: 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
-.footer-soc-item {
+.footer-container-element {
   display: flex;
-  gap: 30px;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-container-element {
+    text-align: start;
+  }
 }
 
 .footer-logo {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -727,6 +750,12 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-accent-color);
+}
+
+.footer-soc-item {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
 
 .footer-contact {
@@ -756,6 +785,12 @@ body {
 .footer-soc-container {
   text-align: left;
   padding-top: 12px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc-container {
+    text-align: start;
+  }
 }
 
 .footer-soc-title {
@@ -795,8 +830,14 @@ body {
 
 .subscribe {
   min-width: 580px;
-  margin-left: 23px;
   padding-top: 12px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    text-align: start;
+    margin-left: 23px;
+  }
 }
 
 .subscribe-title {
@@ -809,8 +850,22 @@ body {
   margin-bottom: 20px;
 }
 
+.sub-place-in {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .sub-place-in {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+}
+
 .sub-input-email {
-  min-width: 358px;
+  min-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -819,6 +874,11 @@ body {
   padding-left: 10px;
   color: var(--main-accent-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .sub-input-email {
+    min-width: 358px;
+  }
 }
 .sub-input-email:focus {
   color: var(--main-accent-color);
@@ -852,11 +912,6 @@ body {
 }
 .sub-btn:hover, .sub-btn:focus {
   border: 1px solid white;
-}
-
-.sub-place-in {
-  display: flex;
-  gap: 12px;
 }
 
 .icon-teleg {

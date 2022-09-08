@@ -1,23 +1,50 @@
 .footer {
+    max-width: 1600px;
     background-color: #2F303A;
     padding-top: 60px;
-    padding-bottom: 60px;
-
+    padding-bottom: 60px;   
 }
 
 .footer .container {
     display: flex;
-    gap: 70px;
-    justify-content: start;
+    gap: 60px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    @include tablet {
+        justify-content: space-between;
+        padding-left: 71px;
+        padding-right: 74px;
+    }
+
+    @include desktop{
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+    
 }
 
-.footer-soc-item {
+.footer__container {
+   
+   
+}
+
+.footer-container-element {
     display: flex;
-    gap: 30px;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    @include desktop {
+        text-align: start;
+    }
 }
 
 .footer-logo {
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -26,6 +53,14 @@
     letter-spacing: 0.03em;
     color: var(--main-accent-color);
 }
+
+.footer-soc-item {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+
 
 .footer-contact {
     width: 231px;
@@ -60,6 +95,11 @@
 .footer-soc-container {
     text-align: left;
     padding-top: 12px;
+    text-align: center;
+
+    @include desktop{
+        text-align: start;
+    }
 }
 
 
@@ -105,8 +145,14 @@
 
 .subscribe {
     min-width: 580px;
-    margin-left: 23px;
+    
     padding-top: 12px;
+    text-align: center;
+
+    @include desktop {
+        text-align: start;
+        margin-left: 23px;
+    }
 }
 
 .subscribe-title {
@@ -121,9 +167,26 @@
     margin-bottom: 20px;
 }
 
+.sub-place-in {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include desktop {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+}
+
 .sub-input-email {
-    min-width: 358px;
+    min-width: 450px;
     height: 50px;
+
+    @include desktop {
+            min-width: 358px;
+        }
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -181,10 +244,7 @@
     };
 }
 
-.sub-place-in {
-    display: flex;
-    gap: 12px;
-}
+
 
 
 .icon-teleg {
