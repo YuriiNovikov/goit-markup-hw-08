@@ -1,32 +1,56 @@
 .regular-cust {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
 }
 
 .regular-cust-title {
     font-weight: 700;
-    font-size: 36px;
+    
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-title-color);
 
+    margin-bottom: 30px;
+
+    @include desktop {
+    font-size: 36px;
     margin-bottom: 50px;
+    }
+    
 }
 
 .regular-cust-list {
     display: flex;
     gap: 30px;
     justify-content: center;
+
+    flex-wrap: wrap;
 }
 
 
 .regular-cust-link {
-    /* background-color: teal; */
     border: 1px solid var(--main-icon-color);
     border-radius: 4px;
-    Width: 170px;
+
+    Width: 210px;
     Height: 92px;
+
+    @include tablet {
+        Width: 226px;
+    }
+    @include desktop {
+        Width: 170px;
+    }
+    
     align-items: center;
     justify-content: center;
     display: flex;

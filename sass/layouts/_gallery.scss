@@ -2,6 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+    // add mob
+    justify-content: center;
 }
 
 .gallery-item-title {
@@ -26,9 +29,10 @@
 }
 
 .gallery-item {
-    /* position: relative; */
+    
     border: 1px solid #EEEEEE;
-    max-width: 370px;
+    max-width: 450px;
+    width: 450px;
 
     &:hover,
     &:focus {
@@ -38,6 +42,14 @@
             0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
     };
+
+    @include tablet {
+        width: 354px;
+        
+    };
+    @include desktop {
+        width: 370px;
+    }
 
 }
 

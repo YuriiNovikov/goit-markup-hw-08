@@ -1,5 +1,9 @@
 .works {
     padding-bottom: 94px;
+    display:none;
+    @include desktop {
+        display:block ;
+    }
 }
 
 .works-title {
@@ -17,17 +21,10 @@
     gap: 30px;
 }
 
-.works-item {}
 
 .works-overlay {
     position: relative;
     display: flex;
-    /* 
-    outline: 1px solid tomato; */
-    /* bottom: 0;
-    left: 0;
-
-    */
 }
 
 .works-overlay-p {
