@@ -139,10 +139,14 @@
 }
 
 .subscribe {
-    min-width: 580px;
+    min-width: 480px;
     
     padding-top: 12px;
     text-align: center;
+
+    @include tablet {
+        min-width: 580px;
+    }
 
     @include desktop {
         text-align: start;
