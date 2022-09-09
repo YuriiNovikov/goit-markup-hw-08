@@ -1,5 +1,5 @@
 .footer {
-    max-width: 1600px;
+
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;   
@@ -16,7 +16,7 @@
         justify-content: space-between;
         padding-left: 71px;
         padding-right: 74px;
-    }
+    };
 
     @include desktop{
         flex-wrap: nowrap;
@@ -26,11 +26,6 @@
 
     }
     
-}
-
-.footer__container {
-   
-   
 }
 
 .footer-container-element {
