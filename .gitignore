@@ -1,5 +1,5 @@
 # Logs
-.SD-Stor
+.DS-Store
 logs
 *.log
 npm-debug.log*
