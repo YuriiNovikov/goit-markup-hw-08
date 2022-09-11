@@ -1,5 +1,5 @@
 .header {
-    // position: absolute;
+    
     padding-top: 16px;
     padding-bottom: 16px;
 
@@ -72,6 +72,7 @@
     @include desktop{
         align-items: center;
         flex-direction: row;
+        gap: 30px;
     }
 }
 

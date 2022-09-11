@@ -139,14 +139,19 @@
 }
 
 .subscribe {
-    min-width: 480px;
+    // min-width: 480px;
+    width: 100%;
     
     padding-top: 12px;
     text-align: center;
 
+    @include mobile {
+        min-width: 480px;
+    };
+
     @include tablet {
         min-width: 580px;
-    }
+    };
 
     @include desktop {
         text-align: start;
@@ -166,11 +171,19 @@
     margin-bottom: 20px;
 }
 
+.place-in {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .sub-place-in {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     @include desktop {
         flex-wrap: nowrap;
@@ -180,8 +193,12 @@
 }
 
 .sub-input-email {
-    min-width: 450px;
+    width: 90%;
     height: 50px;
+
+    @include mobile {
+        min-width: 450px;
+    }
 
     @include desktop {
             min-width: 358px;

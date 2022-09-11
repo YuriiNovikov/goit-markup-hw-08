@@ -30,7 +30,7 @@
     width: 450px;
     height: 609px;
 
-    @include tablet {
+    @include desktop {
         width: 528px;
         height: 581px;
     };
