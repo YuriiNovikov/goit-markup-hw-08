@@ -3,8 +3,10 @@
     flex-wrap: wrap;
     gap: 30px;
 
-    // add mob
     justify-content: center;
+    @include tablet {
+        justify-content: flex-start;
+    }
 }
 
 .gallery-item-title {
