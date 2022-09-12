@@ -184,17 +184,14 @@
 .sub-place-in {
     display: flex;
     gap: 20px;
-    // flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     @include tablet {
-        // flex-wrap: nowrap;
         flex-direction: row;
         justify-content: flex-start;
         gap: 12px;
-        flex-direction: row;
     }
 }
 
