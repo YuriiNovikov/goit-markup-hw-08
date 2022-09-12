@@ -1,0 +1,103 @@
+.hero__overlay {
+    max-width: 1600px;
+    height: 400px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image:
+        linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero-mob.jpg);
+    @include retina {
+        background-image: url('../images/hero-mob-2x.jpeg');
+
+            }
+    @include tablet{
+        background-image:
+            linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero-table.jpg);
+            @include retina {
+                background-image: url('../images/hero-tab-2x.jpeg');
+                }
+    };
+    @include desktop {
+        height: 600px;
+        background-image:
+            linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero.jpg);
+            @include retina {
+                background-image: url('../images/hero-des-2x.jpeg');
+                }
+    };
+    
+    background-color: var(--main-title-color);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+    background-size: cover;
+
+    
+
+}
+
+.hero__container {
+    text-align: center;
+
+    @include desktop {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero__title {
+
+    @include desktop{
+        font-size: 44px;
+        line-height: 1.36;
+    }
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--main-accent-color);
+
+    margin-bottom: 30px;
+}
+
+.hero__btn {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--main-accent-color);
+    background: var(--main-focus-color);
+
+    border-radius: 4px;
+    border: 0;
+    padding: 10px 32px;
+
+    transition: bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__btn:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
