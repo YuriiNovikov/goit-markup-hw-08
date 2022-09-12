@@ -170,7 +170,7 @@
 
     margin-bottom: 20px;
 }
- 
+
 .place-in {
     width: 100%;
     display: flex;
@@ -178,25 +178,22 @@
 
     @include tablet {
         width: 358px;
-    } 
-} 
+    }
+}
 
 .sub-place-in {
     display: flex;
     gap: 20px;
-
+    // flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
- 
 
     @include desktop {
-<<<<<<< HEAD
-        flex-direction: row;
-=======
->>>>>>> 0f579d768157c7bd5523bc7c071828355a71fccc
+
         justify-content: flex-start;
         gap: 12px;
+        flex-direction: row;
     }
 }
 
