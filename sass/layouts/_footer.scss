@@ -170,7 +170,7 @@
 
     margin-bottom: 20px;
 }
-
+ 
 .place-in {
     width: 100%;
     display: flex;
@@ -178,8 +178,8 @@
 
     @include tablet {
         width: 358px;
-    }
-}
+    } 
+} 
 
 .sub-place-in {
     display: flex;
@@ -188,17 +188,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+ 
 
-<<<<<<< HEAD
     @include desktop {
-=======
-    @include tablet {
-        // flex-wrap: nowrap;
->>>>>>> parent of 1b33e45 (Update _footer.scss)
         flex-direction: row;
         justify-content: flex-start;
         gap: 12px;
-        flex-direction: row;
     }
 }
 
