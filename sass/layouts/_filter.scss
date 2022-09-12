@@ -4,10 +4,10 @@
     display: flex;
     justify-content: left;
     align-items: stretch;
-    height: 91px;
+    // height: 91px;
     gap: 8px;
     flex-wrap: wrap;
-    width: 326px;
+    // width: 326px;
 
     @include tablet{
         width: 100%;
