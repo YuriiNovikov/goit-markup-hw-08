@@ -184,18 +184,12 @@
 .sub-place-in {
     display: flex;
     gap: 20px;
-    // flex-wrap: wrap;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-<<<<<<< HEAD
     @include desktop {
-=======
-    @include tablet {
-        // flex-wrap: nowrap;
->>>>>>> parent of 1b33e45 (Update _footer.scss)
-        flex-direction: row;
         justify-content: flex-start;
         gap: 12px;
         flex-direction: row;
