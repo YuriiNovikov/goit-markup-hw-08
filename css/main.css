@@ -1161,7 +1161,6 @@ body {
   transform: translate(-50%, -50%);
   background-color: #fff;
   min-width: 450px;
-  height: 609px;
   border-radius: 4px;
   padding: 40px;
 }
@@ -1208,11 +1207,20 @@ body {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
+  padding-left: 25px;
+  padding-right: 25px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .iput-filed {

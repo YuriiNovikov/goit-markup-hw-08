@@ -28,7 +28,7 @@
 
     background-color: #fff;
     min-width: 450px;
-    height: 609px;
+    // height: 609px;
 
     @include desktop {
         width: 528px;
@@ -85,7 +85,16 @@
 .modal-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    @include desktop {
+        line-height: 1.15;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     text-align: center;
     letter-spacing: 0.03em;
 
